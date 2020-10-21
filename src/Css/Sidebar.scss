@@ -1,0 +1,69 @@
+$width: 5%;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav-open {
+    height: 100%;
+    width: $width+10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #464de4;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+   // width: calc(100% - #{$width});
+    //margin-left: $width;
+    width: 100%;
+    top:0;
+    transition: 0.5s;
+}
+.btn-primary {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none !important;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.btn-primary:focus {
+  box-shadow: 0 ;
+  outline: none;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.nav-margin{
+ // margin-left: $width+10%;
+  transition: 0.5s;
+  width: calc(100% - #{$width+10%});
+}
+
+.icon-user-following:before {
+  content: "\e003";
+}
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

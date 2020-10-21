@@ -1,0 +1,36 @@
+.row-one{
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    margin-top: 8%;
+}
+
+.new-user{
+    font-size: 12px;
+}
+
+.card{
+    height: 120px;
+}
+.icon-style{
+    width: 55px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.icon-info{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    height: 100%;   
+}
+
+.figure-style{
+    font-size: 25px;
+}
+
+.card-body{
+    display:flex;
+    height:100%;
+}
