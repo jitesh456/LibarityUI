@@ -6,13 +6,11 @@ import {ReactComponent as Target} from '../Assets/target.svg'
 import {ReactComponent as Check} from '../Assets/Check.svg'
 import {useSelector} from 'react-redux';
 
-
 import '../Css/RowOne.scss'
 
 export default function RowOne() {
 
-    const menuInfo=useSelector(state=>state.menuInfo);
-    console.log(menuInfo)
+    const menuInfo=useSelector(state=>state.liberity.menuInfo);
 
     return (
         <div className="row-one">

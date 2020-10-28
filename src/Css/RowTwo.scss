@@ -1,0 +1,110 @@
+.row-two-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    margin:1%
+}
+
+.row-two-card{
+    width: 100%;
+    height: 100%;
+    margin-right: 4%;
+}
+
+.card-header-content{
+    height: 45%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.row-two-card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    color: #354168;
+}
+.row-two-card-containt{
+    font-size: 18px;
+    color: grey;
+}
+.row-two-card-containt-second{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.card-body-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: space-between;
+}
+
+.card-footer-items{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+.card-footer-content{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-image{
+    height: 100px;
+    width:100px
+}
+.profile-name{
+    font-size: 25px;
+}
+
+#button{
+    background: #464de4;
+}
+
+.card-footer-two{
+    height: 100%;
+}
+
+button:hover{
+    background: blue;
+}
+
+.card-header-three{
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    align-items: center
+}
+.card-header-content-three{
+    display: flex;
+    flex-direction: column;
+    align-self: 20%;
+    height: 50%;
+    color: #354168;
+    justify-content: space-between;
+}
+.card-header-content-three-heading{
+    font-size: 13px;
+    color: silver;
+    font-family: sans-serif;
+}
+.card-header-content-three-heading-iteam{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
+    position: fixed;
+    direction: ltr;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}

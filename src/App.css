@@ -7,7 +7,22 @@
   height: 40vmin;
   pointer-events: none;
 }
+.table{
+  width:96%;
+  border: 1px solid silver;
+}
+tbody{
+  background: white;
+}
 
+th{
+  font-weight: 400;
+  text-align: left;
+}
+td{
+  font-weight: 200;
+  font-size: 13px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -3,9 +3,11 @@ import '../Css/Sidebar.scss'
 import {Nav,Navbar,Dropdown} from 'react-bootstrap'
 import RowOne from '../Component/RowOne'
 import RowTwo from '../Component/RowTwo'
+import RowFour from '../Component/RowFour'
 import {useDispatch} from 'react-redux';
 import {setMenuInfo} from '../Redux/Action/liberityAction'
 import LiberityService from '../Services/LibertyService';
+import CustomTable from '../Component/CustomTable'
 
 
 
@@ -25,18 +27,16 @@ export const DashBoard = () => {
             setNavMargin("");
         }
     }
- 
+
 
     useEffect(()=>{
-        LiberityService.menuInfo().then( response=>{
-            console.log(response.data) 
-            dispatch(setMenuInfo(response.data));     
-            });
+            LiberityService.menuInfo().then( response=>{
+                dispatch(setMenuInfo(response.data));     
+                });               
     },[dispatch]);
 
     const handleNav=()=>{
         setSideBar(!sidebar,openSideBar())
-        console.log("hello")
       }
 
     return (
@@ -61,6 +61,8 @@ export const DashBoard = () => {
             </Navbar>
             <RowOne/>
             <RowTwo/>
+            <CustomTable/>
+            <RowFour/>
         </div>
     )
 }

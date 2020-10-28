@@ -1,5 +1,5 @@
 import {createStore} from 'redux';
-import liberityRedducer from './Reducer/liberityReducer'
+import RootReducer from './Reducer/RootReducer'
 
-const store=createStore(liberityRedducer)
+const store=createStore(RootReducer)
 export default store;

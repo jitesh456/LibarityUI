@@ -3,7 +3,7 @@ import {SET_DATA}  from '../Action/liberityAction'
 
 
 const initialState={
-    menuInfo:{},
+    menuInfo:{}
 }
 
 
