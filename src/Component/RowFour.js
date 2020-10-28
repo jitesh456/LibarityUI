@@ -3,7 +3,7 @@ import {Card} from 'react-bootstrap'
 import SampleBarChart from '../Component/SampleBarChart'
 const RowFour = () => {
     return (
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex"}} data-aos="flip-up">
             <Card style={{height:"300px"}}>
                 <div>
                 <h6>The Current Chart</h6>

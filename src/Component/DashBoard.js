@@ -8,6 +8,8 @@ import {useDispatch} from 'react-redux';
 import {setMenuInfo} from '../Redux/Action/liberityAction'
 import LiberityService from '../Services/LibertyService';
 import CustomTable from '../Component/CustomTable'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 
 
@@ -32,7 +34,10 @@ export const DashBoard = () => {
     useEffect(()=>{
             LiberityService.menuInfo().then( response=>{
                 dispatch(setMenuInfo(response.data));     
-                });               
+                });   
+                Aos.init({
+                    duration:2000
+                })            
     },[dispatch]);
 
     const handleNav=()=>{
@@ -59,10 +64,10 @@ export const DashBoard = () => {
                 </Nav.Link>
             </Nav>            
             </Navbar>
-            <RowOne/>
-            <RowTwo/>
-            <CustomTable/>
-            <RowFour/>
+            <RowOne data-aos="flip-right"/>
+            <RowTwo data-aos="fade-left"/>
+            <CustomTable data-aos="fade-left"/>
+            <RowFour data-aos="fade-right"/>
         </div>
     )
 }

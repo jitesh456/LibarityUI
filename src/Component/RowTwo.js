@@ -103,7 +103,7 @@ const RowTwo = () => {
 
 
     return (
-        <div className="row-two-container">
+        <div className="row-two-container" data-aos="flip-right">
             <Card  className="row-two-card">
                 <div className="card-header-content">                
                     <Image className="profile-image" src="https://i.ibb.co/FYG9N4K/dp.jpg" roundedCircle />

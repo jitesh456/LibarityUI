@@ -32,7 +32,7 @@ import {useSelector,useDispatch} from 'react-redux';
         
     });
     return (
-        <div style={{display: "flex",margin: "11px"}}>
+        <div style={{display: "flex",margin: "11px"}} data-aos="flip-left">
             <Table >
             <thead>
                 <tr>
